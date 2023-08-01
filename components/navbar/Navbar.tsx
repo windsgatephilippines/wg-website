@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Navbar = () => {
   return (
@@ -22,7 +24,7 @@ const Navbar = () => {
                 <Link  className="nav-item nav-link" href={"/about"}>About</Link>
                 <Link href={"/"} className="nav-item nav-link">Services</Link>
                 <div className="nav-item dropdown">
-                    <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" className="nav-link align-baseline" data-bs-toggle="dropdown">Pages<FontAwesomeIcon icon={faAngleDown}/></a>
                     <div className="dropdown-menu bg-light m-0">
                       <Link href={"/"}className="dropdown-item">Projects</Link>
                       <Link href={"/"} className="dropdown-item">Features</Link>
@@ -33,7 +35,7 @@ const Navbar = () => {
                 </div>
                 <a href="contact.html" className="nav-item nav-link">Contact</a>
             </div>
-            <a href="" className="btn btn-primary px-3 d-none d-lg-block">Get A Quote</a>
+            <Link href="" className="btn btn-primary px-3 d-none d-lg-block">Get A Quotsse</Link>
         </div>
     </nav>
   )

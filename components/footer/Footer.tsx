@@ -1,5 +1,9 @@
 import React from 'react'
 import CopyRight from './CopyRight'
+import Link from 'next/link'
+import {faTwitter,faFacebookF,faYoutube,faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => {
   return (
@@ -12,23 +16,28 @@ const Footer = () => {
                         <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+012 345 67890</p>
                         <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@example.com</p>
                         <div className="d-flex pt-3">
-                            <a className="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                    className="fab fa-twitter"></i></a>
-                            <a className="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                    className="fab fa-facebook-f"></i></a>
-                            <a className="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                    className="fab fa-youtube"></i></a>
-                            <a className="btn btn-square btn-primary rounded-circle me-2" href=""><i
-                                    className="fab fa-linkedin-in"></i></a>
+                            <Link className="btn btn-square btn-primary rounded-circle me-2" href="#">
+                                <FontAwesomeIcon icon={faTwitter}/>
+                            </Link>
+                                   
+                            <Link className="btn btn-square btn-primary rounded-circle me-2" href="">
+                                <FontAwesomeIcon icon={faFacebookF}/>
+                            </Link>
+                            <Link className="btn btn-square btn-primary rounded-circle me-2" href="">
+                                <FontAwesomeIcon icon={faYoutube}/>
+                            </Link>
+                            <Link className="btn btn-square btn-primary rounded-circle me-2" href="">
+                                <FontAwesomeIcon icon={faLinkedinIn}/>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <h5 className="text-white mb-4">Quick Links</h5>
-                        <a className="btn btn-link" href="">About Us</a>
-                        <a className="btn btn-link" href="">Contact Us</a>
-                        <a className="btn btn-link" href="">Our Services</a>
-                        <a className="btn btn-link" href="">Terms & Condition</a>
-                        <a className="btn btn-link" href="">Support</a>
+                        <Link className="btn btn-link pr-1" href=""><FontAwesomeIcon icon={faChevronRight}/>About Uss</Link>
+                        <Link className="btn btn-link" href=""><FontAwesomeIcon icon={faChevronRight}/>Contact Us</Link>
+                        <Link className="btn btn-link" href=""><FontAwesomeIcon icon={faChevronRight}/>Our Services</Link>
+                        <Link className="btn btn-link" href=""><FontAwesomeIcon icon={faChevronRight}/>Terms & Condition</Link>
+                        <Link className="btn btn-link" href=""><FontAwesomeIcon icon={faChevronRight}/>Support</Link>
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <h5 className="text-white mb-4">Business Hours</h5>
