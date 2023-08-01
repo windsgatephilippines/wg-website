@@ -1,10 +1,12 @@
-import './globals.css'
 import '@/styles/bootstrap.scss'
+import './globals.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 import type { Metadata } from 'next'
 import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
 import TopBar from '@/components/topbar/Topbar';
-import Carousel from '@/components/carousel/Carousel';
 
 
 export const metadata: Metadata = {

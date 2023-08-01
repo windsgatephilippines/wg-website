@@ -1,4 +1,6 @@
 import React from 'react'
+import { faEnvelopeOpen, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const AboutUs = () => {
   return (
@@ -47,7 +49,7 @@ const AboutUs = () => {
                             <div className="col-sm-6">
                                 <div className="d-flex align-items-center">
                                     <div className="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                        <i className="fa fa-envelope-open text-white"></i>
+                                        <FontAwesomeIcon icon={faEnvelopeOpen} />
                                     </div>
                                     <div className="ms-3">
                                         <p className="mb-2">Email us</p>
@@ -58,7 +60,7 @@ const AboutUs = () => {
                             <div className="col-sm-6">
                                 <div className="d-flex align-items-center">
                                     <div className="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                        <i className="fa fa-phone-alt text-white"></i>
+                                    <FontAwesomeIcon icon={faPhone} />
                                     </div>
                                     <div className="ms-3">
                                         <p className="mb-2">Call us</p>
