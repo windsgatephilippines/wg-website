@@ -1,6 +1,6 @@
 /******* Customized Bootstrap ********/
 
-$primary: #FF5E14;
+$primary: #286090;
 $secondary: #5F656F;
 $light: #F5F5F5;
 $dark: #02245B;
@@ -29,4 +29,4 @@ $link-decoration: none;
 
 $enable-negative-margins: true;
 
-@import "bootstrap/scss/bootstrap";
+@import '/node_modules/bootstrap/scss/bootstrap.scss';

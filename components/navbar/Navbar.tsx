@@ -6,15 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
-        <a className="navbar-brand ps-5 me-0" >
-        <Link href="/">
+        <Link href='/' className="navbar-brand ps-5 me-0" >
+      
         <h1 className="font-semibold text-xl dark:text-gray-100">
         </h1>
         <p className="text-base font-light text-gray-500 dark:text-gray-300">
         </p>
-      </Link>
             <h1 className="text-white m-0">Wind's Gate</h1>
-        </a>
+        </Link>
         <button type="button" className="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span className="navbar-toggler-icon"></span>
         </button>
@@ -35,7 +34,7 @@ const Navbar = () => {
                 </div>
                 <a href="contact.html" className="nav-item nav-link">Contact</a>
             </div>
-            <Link href="" className="btn btn-primary px-3 d-none d-lg-block">Get A Quotsse</Link>
+            <Link href="#" className="btn btn-primary px-3 d-none d-lg-block">Get A Quotsse</Link>
         </div>
     </nav>
   )
