@@ -18,7 +18,7 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto p-4 p-lg-0">
-                <Link className="nav-item nav-link active" href={"/"}>Home</Link>
+                <Link className="nav-item nav-link" href={"/"}>Home</Link>
                 <Link  className="nav-item nav-link" href={"/about"}>About</Link>
                 <Link href={"/"} className="nav-item nav-link">Services</Link>
                 <div className="nav-item dropdown">
