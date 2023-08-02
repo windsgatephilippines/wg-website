@@ -11,9 +11,9 @@ const About = () => {
 
   return (
     <>
-    <PageHeader pageName={pageName}></PageHeader>
-   <AboutUs></AboutUs>
-   </>
+      <PageHeader pageName={pageName}></PageHeader>
+      <AboutUs></AboutUs>
+    </>
   )
 }
 

@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className="navbar-nav ms-auto p-4 p-lg-0">
                 <Link className="nav-item nav-link active" href={"/"}>Home</Link>
                 <Link  className="nav-item nav-link" href={"/about"}>About</Link>
-                <Link href={"/"} className="nav-item nav-link">Services</Link>
+                <Link href={"/services"} className="nav-item nav-link">Services</Link>
                 <div className="nav-item dropdown">
                     <a href="#" className="nav-link align-baseline" data-bs-toggle="dropdown">Pages<FontAwesomeIcon icon={faAngleDown}/></a>
                     <div className="dropdown-menu bg-light m-0">
