@@ -1,9 +1,19 @@
 import React from 'react';
 import AboutUs from '@/components/about/About'
+import PageHeader from '@/components/PageHeader';
 
 const About = () => {
+  const pageName = [
+    'Home',
+    'Pages',
+    'About Us'
+  ];
+
   return (
-   <AboutUs></AboutUs>
+    <>
+      <PageHeader pageName={pageName}></PageHeader>
+      <AboutUs></AboutUs>
+    </>
   )
 }
 
