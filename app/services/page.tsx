@@ -1,7 +1,7 @@
 import React from 'react';
 import Services from '@/components/services/Services'
 import PageHeader from '@/components/PageHeader';
-import Testimonial from '@/components/testimonial/testimonial';
+import Testimonial from '../../components/testimonial/Testimonial';
 
 const About = () => {
   const pageName = [

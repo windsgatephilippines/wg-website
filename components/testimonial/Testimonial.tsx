@@ -1,10 +1,5 @@
 import React from "react";
-import OwlCarousel from 'react-owl-carousel';
-// import OwlCarousel from '@ntegral/react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-import dynamic from "next/dynamic";
-// const OwlCarousel = dynamic(() => import("react-owl-carousel"),{});
+
 const Testimonial = () => {
     return (
         <div className="container-xxl py-5">
@@ -32,7 +27,7 @@ const Testimonial = () => {
                     <div className="item"><h4>11</h4></div>
                     <div className="item"><h4>12</h4></div>
                 </OwlCarousel> */}
-                <div className="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                {/* <div className="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div className="testimonial-item text-center">
                         <div className="testimonial-img position-relative">
                             <img className="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg" />
@@ -78,7 +73,7 @@ const Testimonial = () => {
                             <span className="fst-italic">Profession</span>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
