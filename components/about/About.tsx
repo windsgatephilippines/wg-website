@@ -9,17 +9,17 @@ const AboutUs = () => {
                 <div className="row g-5">
                     <div className="col-lg-6">
                         <div className="row gx-3 h-100">
-                            <div className="col-6 align-self-start wow fadeInUp" data-wow-delay="0.1s">
+                            <div className="col-6 align-self-start wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
                                 {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text */}
                                 <img className="img-fluid" src="img/about-1.jpg" />
                             </div>
-                            <div className="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
+                            <div className="col-6 align-self-end wow animate__animated animate__fadeInDown" data-wow-delay="0.1s">
                                 {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text */}
                                 <img className="img-fluid" src="img/about-2.jpg" />
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div className="col-lg-6 wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
                         <p className="fw-medium text-uppercase text-primary mb-2">About Us</p>
                         <h1 className="display-5 mb-4">Wind’s Gate Philippine Software Development Inc</h1>
                         <p className="mb-4">
@@ -49,7 +49,7 @@ const AboutUs = () => {
                             <div className="col-sm-6">
                                 <div className="d-flex align-items-center">
                                     <div className="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                        <FontAwesomeIcon icon={faEnvelopeOpen} />
+                                        <FontAwesomeIcon className="text-white" icon={faEnvelopeOpen} />
                                     </div>
                                     <div className="ms-3">
                                         <p className="mb-2">Email us</p>
@@ -60,7 +60,7 @@ const AboutUs = () => {
                             <div className="col-sm-6">
                                 <div className="d-flex align-items-center">
                                     <div className="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <FontAwesomeIcon icon={faPhone} />
+                                    <FontAwesomeIcon className="text-white" icon={faPhone} />
                                     </div>
                                     <div className="ms-3">
                                         <p className="mb-2">Call us</p>
