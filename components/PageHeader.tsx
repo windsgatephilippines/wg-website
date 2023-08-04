@@ -1,4 +1,5 @@
 import React from 'react';
+import { AppProps } from 'next/app';
 
 const PageHeader = ({pageName}) => {
     const pageNameLength = pageName.length;
@@ -9,9 +10,9 @@ const PageHeader = ({pageName}) => {
             <h1 className="display-3 text-white animated slideInRight">{pageName.slice(-1)}</h1>
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb animated slideInRight mb-0">
-                    {pageName.map((name,index) => (
+                    {pageName.map((name: string,index: number) => (
                        
-                        <li className={`breadcrumb-item ${pageNameLength == (index + 1) ? 'active' : ''}`}><a href="#">{name}</a></li>
+                        <li tabIndex={index} className={`breadcrumb-item ${pageNameLength == (index + 1) ? 'active' : ''}`}><a href="#">{name}</a></li>
                         
                     ))}
                     

@@ -12,11 +12,11 @@ const Carousel = () => {
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-lg-10 text-start">
-                                    <p className="fs-5 fw-medium text-primary text-uppercase animated slideInRight">25 Years
+                                    <p className="fs-5 fw-medium text-primary text-uppercase animate__animated animated animate__slideInRight">25 Years
                                         of Working Experience</p>
-                                    <h1 className="display-1 text-white mb-5 animated slideInRight">Software Solution
+                                    <h1 className="display-1 text-white mb-5 animate__animated animate__slideInRight">Software Solution
                                         Providing Company</h1>
-                                    <a href="" className="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
+                                    <a href="" className="btn btn-primary py-3 px-5 animate__animated animate__slideInRight">Explore More</a>
                                 </div>
                             </div>
                         </div>
@@ -29,11 +29,11 @@ const Carousel = () => {
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-lg-10 text-start">
-                                    <p className="fs-5 fw-medium text-primary text-uppercase animated slideInRight">25 Years
+                                    <p className="fs-5 fw-medium text-primary text-uppercase animate__animated animate_slideInRight">25 Years
                                         of Working Experience</p>
-                                    <h1 className="display-1 text-white mb-5 animated slideInRight">The Best Reliable
+                                    <h1 className="display-1 text-white mb-5 animate__animated animate_slideInRight">The Best Reliable
                                         Software Solution</h1>
-                                    <a href="" className="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
+                                    <a href="" className="btn btn-primary py-3 px-5 animate__animated animate_slideInRight">Explore More</a>
                                 </div>
                             </div>
                         </div>
