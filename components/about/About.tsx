@@ -1,6 +1,8 @@
+'use client'
 import React from 'react'
 import { faEnvelopeOpen, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ReactWOW from 'react-wow';
 
 const AboutUs = () => {
   return (
@@ -8,18 +10,25 @@ const AboutUs = () => {
             <div className="container">
                 <div className="row g-5">
                     <div className="col-lg-6">
+                        
                         <div className="row gx-3 h-100">
-                            <div className="col-6 align-self-start wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                            <ReactWOW>
+                            <div className="col-6 align-self-start animate__animated animate__fadeInUp" data-wow-delay="0.1s">
                                 {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text */}
                                 <img className="img-fluid" src="img/about-1.jpg" />
                             </div>
-                            <div className="col-6 align-self-end wow animate__animated animate__fadeInDown" data-wow-delay="0.1s">
+                            {/* </ReactWOW>
+                            <ReactWOW> */}
+                            <div className="col-6 align-self-end animate__animated animate__fadeInDown" data-wow-delay="0.1s">
                                 {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text */}
                                 <img className="img-fluid" src="img/about-2.jpg" />
                             </div>
+                            </ReactWOW>
                         </div>
+                        
                     </div>
-                    <div className="col-lg-6 wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                    <ReactWOW>
+                    <div className="col-lg-6 animate__animated animate__fadeInRight" data-wow-delay="0.1s">
                         <p className="fw-medium text-uppercase text-primary mb-2">About Us</p>
                         <h1 className="display-5 mb-4">Wind’s Gate Philippine Software Development Inc</h1>
                         <p className="mb-4">
@@ -70,6 +79,7 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </div>
+                    </ReactWOW>
                 </div>
             </div>
     </div>

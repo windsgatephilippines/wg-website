@@ -1,12 +1,15 @@
+'use client'
 import React from 'react'
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ReactWOW from 'react-wow';
 
 const FeatureTeam = () => {
     return (
         <div className="container-xxl py-5">
             <div className="container">
                 <div className="row g-5 align-items-center">
+                    <ReactWOW>
                     <div className="col-lg-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
                         <h1 className="display-5 mb-4">Join Our Team!</h1>
                         <p className="mb-4">Job Description</p>
@@ -83,6 +86,8 @@ const FeatureTeam = () => {
                             </div>
                         </div>
                     </div>
+                    </ReactWOW>
+                    <ReactWOW>
                     <div className="col-lg-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
                         <div className="position-relative me-lg-4">
                             <img className="img-fluid w-100" src="img/feature.jpg" alt="" />
@@ -95,6 +100,7 @@ const FeatureTeam = () => {
                             </button>
                         </div>
                     </div>
+                    </ReactWOW>
                 </div>
             </div>
         </div>

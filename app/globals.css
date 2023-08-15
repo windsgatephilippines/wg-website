@@ -578,6 +578,10 @@ h6,
 
 
 /*** Testimonial ***/
+.testimonial-carousel {
+  position: relative;
+}
+
 .testimonial-carousel::before {
   position: absolute;
   content: "";
@@ -585,7 +589,7 @@ h6,
   left: 0;
   height: 100%;
   width: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
 
@@ -596,7 +600,7 @@ h6,
   right: 0;
   height: 100%;
   width: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to left, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
 
@@ -610,7 +614,7 @@ h6,
 @media (min-width: 992px) {
   .testimonial-carousel::before,
   .testimonial-carousel::after {
-      width: 300px;
+      width: 450px;
   }
 }
 
@@ -628,6 +632,7 @@ h6,
 }
 
 .testimonial-carousel:hover .owl-nav {
+  cursor: pointer;
   width: 300px;
   opacity: 1;
 }
@@ -646,8 +651,8 @@ h6,
 }
 
 .testimonial-carousel .testimonial-img img {
-  width: 100px;
-  height: 100px;
+  width: 100px!important;
+  height: 100px!important;
 }
 
 .testimonial-carousel .testimonial-img .btn-square {
@@ -657,20 +662,20 @@ h6,
   transform: translateX(-50%);
 }
 
-.testimonial-carousel .owl-item .testimonial-text {
+.testimonial-carousel .use-spring-carousel-item .testimonial-text {
   margin-bottom: 30px;
   box-shadow: 0 0 45px rgba(0, 0, 0, .08);
   transform: scale(.8);
   transition: .5s;
 }
 
-.testimonial-carousel .owl-item.center .testimonial-text {
+.testimonial-carousel .use-spring-carousel-item.center .testimonial-text {
   transform: scale(1);
 }
 
 
 /*** Footer ***/
-.footer {
+.footer, .footer a {
   color: #B0B9AE;
 }
 
@@ -687,8 +692,6 @@ h6,
 
 .footer .btn.btn-link::before {
   position: relative;
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-right: 10px;
 }
@@ -702,4 +705,18 @@ h6,
 .copyright {
   color: #B0B9AE;
   border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.use-spring-carousel-main-wrapper {
+  overflow: hidden;
+}
+
+.use-spring-carousel-item .carousel-item {
+  position: initial;
+  display: inline;
+  float: initial;
+  width: 100%;
+  margin-right: initial;
+  backface-visibility: initial;
+  transition: transform 0.6s ease-in-out;
 }

@@ -28,13 +28,13 @@ const Navbar = () => {
                       <Link href={"/"}className="dropdown-item">Projects</Link>
                       <Link href={"/feature"} className="dropdown-item">Features</Link>
                       <Link href={"/team"} className="dropdown-item">Our Team</Link>
-                      <Link href={"/"} className="dropdown-item">Testimonial</Link>
-                      <Link href="404.html" className="dropdown-item">404 Page</Link>
+                      <Link href={"/testimonial"} className="dropdown-item">Testimonial</Link>
+                      {/* <Link href="404.html" className="dropdown-item">404 Page</Link> */}
                     </div>
                 </div>
-                <a href={"/contact"} className="nav-item nav-link">Contact</a>
+                <Link href={"/contact"} className="nav-item nav-link">Contact</Link>
             </div>
-            <Link href="#" className="btn btn-primary px-3 d-none d-lg-block">Get A Quotsse</Link>
+            <Link href="#" className="btn btn-primary px-3 d-none d-lg-block">JOIN NOW</Link>
         </div>
     </nav>
   )

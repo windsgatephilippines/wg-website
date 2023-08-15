@@ -1,54 +1,75 @@
+'use client'
 import React from 'react'
+import ReactWOW from 'react-wow';
+import {useSpringCarousel} from 'react-spring-carousel';
+import { CarouselItem } from 'react-bootstrap';
+import Image from 'next/image';
 
 const Carousel = () => {
+    const items = [
+        {
+            title: 'Software Solution Providing Company',
+            sub_title: '25 Years of Working Experience',
+            image_path: '/../public/img/carousel-1.jpg',
+            button_name: 'Explore More',
+            link: '#'
+        },
+        {
+            title: 'Software Solution Providing Company',
+            sub_title: '25 Years of Working Experience',
+            image_path: '/../public/img/carousel-2.jpg',
+            button_name: 'Explore More',
+            link: '#'
+        }
+    ];
+    const { 
+        carouselFragment, 
+        slideToPrevItem, 
+        slideToNextItem 
+    } = useSpringCarousel({
+        withLoop: true,
+        items: items.map((item,key) => ({
+           
+            id: key,
+            renderItem: (
+            <CarouselItem>
+                <div key={key}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <Image className="w-100" src={item.image_path} alt="Image"  width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} />
+                    <div className="carousel-caption">
+                        <div className="container">
+                            <div className="row justify-content-center">
+                                <div className="col-lg-10 text-start">
+                                    <ReactWOW>
+                                    <p className="fs-5 fw-medium text-primary text-uppercase animate__animated animated animate__slideInRight">{item.sub_title}</p>
+                                    
+                                    <h1 className="display-1 text-white mb-5 animate__animated animate__slideInRight">{item.title}</h1>
+                                    <a href="#" className="btn btn-primary py-3 px-5 animate__animated animate__slideInRight">{item.button_name}</a>
+                                    </ReactWOW>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </CarouselItem>
+          ),
+        })),
+    });
   return (
     <div className="container-fluid px-0 mb-5">
-        <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
+       
             <div className="carousel-inner">
-                <div className="carousel-item active">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img className="w-100" src="/img/carousel-1.jpg" alt="Image"/>
-                    <div className="carousel-caption">
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-lg-10 text-start">
-                                    <p className="fs-5 fw-medium text-primary text-uppercase animate__animated animated animate__slideInRight">25 Years
-                                        of Working Experience</p>
-                                    <h1 className="display-1 text-white mb-5 animate__animated animate__slideInRight">Software Solution
-                                        Providing Company</h1>
-                                    <a href="" className="btn btn-primary py-3 px-5 animate__animated animate__slideInRight">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img className="w-100" src="/img/carousel-2.jpg" alt="Image"/>
-                    <div className="carousel-caption">
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-lg-10 text-start">
-                                    <p className="fs-5 fw-medium text-primary text-uppercase animate__animated animate_slideInRight">25 Years
-                                        of Working Experience</p>
-                                    <h1 className="display-1 text-white mb-5 animate__animated animate_slideInRight">The Best Reliable
-                                        Software Solution</h1>
-                                    <a href="" className="btn btn-primary py-3 px-5 animate__animated animate_slideInRight">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {carouselFragment}
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+            <button className="carousel-control-prev" onClick={slideToPrevItem} type="button" >
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
             </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+            <button className="carousel-control-next" onClick={slideToNextItem} type="button">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
-        </div>
+        
     </div>
   )
 }
