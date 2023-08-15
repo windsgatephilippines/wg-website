@@ -1,10 +1,13 @@
+'use client'
 import React from "react";
+import ReactWow from 'react-wow';
 
 const Feature = ({featureRight}) => {
     return (
         
         <div className="row g-5 align-items-center">
-            <div className="col-lg-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+            <ReactWow>
+            <div className="col-lg-6 animate__animated animate__fadeInUp" data-wow-delay="0.1s">
                 <div className="position-relative me-lg-4">
                     <img className="img-fluid w-100" src="img/feature.jpg" alt="" />
                     <span
@@ -16,11 +19,13 @@ const Feature = ({featureRight}) => {
                     </button>
                 </div>
             </div>
-            <div className="col-lg-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+            </ReactWow>
+            <ReactWow>
+            <div className="col-lg-6 animate__animated animate__fadeInUp" data-wow-delay="0.5s">
                 {featureRight}
             </div>
+            </ReactWow>
         </div>
-    
     );
 }
 

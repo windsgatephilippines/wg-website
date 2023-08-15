@@ -6,6 +6,8 @@ import FeatureTeam from '@/components/featureTeam/FeatureTeam';
 import ServicesHome from '@/components/services/ServicesHome';
 import Team from '@/components/team/Team';
 import 'animate.css';
+import Testimonial from '@/components/testimonial/Testimonial';
+import Project from '@/components/project/Project';
 
 
 export default function Home() {
@@ -57,6 +59,55 @@ export default function Home() {
 
     },
   ]
+  const testimonials = [
+    {
+      name: 'Rob Miller',
+      position: 'CEO & Founder',
+      image_path: '/../public/img/testimonial-1.jpg',
+      testimonial: 'Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.'
+
+    },
+    {
+      name: 'Adam Crew',
+      position: 'Project Manager',
+      image_path: '/../public/img/testimonial-2.jpg',
+      testimonial: 'Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.'
+
+    },
+    {
+      name: 'Peter Farel',
+      position: 'Software Engineer',
+      image_path: '/../public/img/testimonial-3.jpg',
+      testimonial: 'Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.'
+
+    },
+  ]
+  const projects = [
+    {
+      title: 'Rob Miller',
+      image_path: '/../public/img/project-1.jpg',
+    },
+    {
+      title: 'Adam Crew',
+      image_path: '/../public/img/project-2.jpg',
+    },
+    {
+      title: 'Peter Farel',
+      image_path: '/../public/img/project-3.jpg',
+    },
+    {
+      title: 'Adam Crew',
+      image_path: '/../public/img/project-4.jpg',
+    },
+    {
+      title: 'Peter Farel',
+      image_path: '/../public/img/project-5.jpg',
+    },
+    {
+      title: 'Peter Farel',
+      image_path: '/../public/img/project-6.jpg',
+    },
+  ]
   return (
    <>
       <Carousel></Carousel>
@@ -68,7 +119,9 @@ export default function Home() {
       </div>
       <FeatureTeam />
       <ServicesHome services={services} />
+      <Project projects={projects} />
       <Team teams={teams}/>
+      <Testimonial testimonials={testimonials}/>
    </>
   )
 }

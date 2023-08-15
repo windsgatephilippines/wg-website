@@ -2,7 +2,7 @@ import React from 'react'
 import CopyRight from './CopyRight'
 import Link from 'next/link'
 import {faTwitter,faFacebookF,faYoutube,faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight, faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => {
@@ -10,11 +10,11 @@ const Footer = () => {
     <div className="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
             <div className="container py-5">
                 <div className="row g-5">
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-3 col-md-6 text-start">
                         <h5 className="text-white mb-4">Our Office</h5>
-                        <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p className="mb-2"><FontAwesomeIcon className='me-3' icon={faLocationDot}/>123 Street, New York, USA</p>
+                        <p className="mb-2"><FontAwesomeIcon className='me-3' icon={faPhone}/>+012 345 67890</p>
+                        <p className="mb-2"><FontAwesomeIcon className='me-3' icon={faEnvelope}/>info@example.com</p>
                         <div className="d-flex pt-3">
                             <Link className="btn btn-square btn-primary rounded-circle me-2" href="#">
                                 <FontAwesomeIcon icon={faTwitter}/>
@@ -33,11 +33,11 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <h5 className="text-white mb-4">Quick Links</h5>
-                        <Link className="btn btn-link pr-1" href=""><FontAwesomeIcon icon={faChevronRight}/>About Uss</Link>
-                        <Link className="btn btn-link" href=""><FontAwesomeIcon icon={faChevronRight}/>Contact Us</Link>
-                        <Link className="btn btn-link" href=""><FontAwesomeIcon icon={faChevronRight}/>Our Services</Link>
-                        <Link className="btn btn-link" href=""><FontAwesomeIcon icon={faChevronRight}/>Terms & Condition</Link>
-                        <Link className="btn btn-link" href=""><FontAwesomeIcon icon={faChevronRight}/>Support</Link>
+                        <Link className="btn btn-link d-block text-start" href=""><FontAwesomeIcon className='me-3' icon={faChevronRight}/>About Us</Link>
+                        <Link className="btn btn-link d-block text-start" href=""><FontAwesomeIcon className='me-3' icon={faChevronRight}/>Contact Us</Link>
+                        <Link className="btn btn-link d-block text-start" href=""><FontAwesomeIcon className='me-3' icon={faChevronRight}/>Our Services</Link>
+                        <Link className="btn btn-link d-block text-start" href=""><FontAwesomeIcon className='me-3' icon={faChevronRight}/>Terms & Condition</Link>
+                        <Link className="btn btn-link d-block text-start" href=""><FontAwesomeIcon className='me-3' icon={faChevronRight}/>Support</Link>
                     </div>
                     <div className="col-lg-3 col-md-6">
                         <h5 className="text-white mb-4">Business Hours</h5>

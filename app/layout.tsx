@@ -9,7 +9,7 @@ import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/footer/Footer';
 import TopBar from '@/components/topbar/Topbar';
 import { useEffect } from 'react'
-import WOW from 'wowjs'
+import ReactWOW from 'react-wow';
 
 
 export const metadata: Metadata = {
@@ -23,12 +23,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle.min.js");
-    new WOW.WOW({
-      live: false
-    }).init();
-}, []);
+//   useEffect(() => {
+//     require("bootstrap/dist/js/bootstrap.bundle.min.js");
+//     new WOW.WOW({
+//       live: false
+//     }).init();
+// }, []);
   return (
     
     <html lang="en">

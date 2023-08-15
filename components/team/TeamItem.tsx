@@ -3,12 +3,14 @@ import { faShare } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF,faTwitter,faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import ReactWOW from 'react-wow';
 
 const TeamItem = ({teams}) => {
     return (
         <div className="row g-4">
-            {teams.map((item: Array<string>,key: number) => (
-                <div className="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+            <ReactWOW>
+            {teams.map((item: Array<object>,key: number) => (
+                <div key={key} className="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                     <div className="team-item">
                     <Image className="img-fluid" src={item.image_path} alt="service_image" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} />
                         <div className="d-flex">
@@ -35,6 +37,7 @@ const TeamItem = ({teams}) => {
                     </div>
                 </div>
             ))}
+            </ReactWOW>
         </div>
     );
 }
