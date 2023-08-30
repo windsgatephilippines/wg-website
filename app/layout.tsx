@@ -22,7 +22,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-
 //   useEffect(() => {
 //     require("bootstrap/dist/js/bootstrap.bundle.min.js");
 //     new WOW.WOW({
