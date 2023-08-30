@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import 'styles/scss/global.scss'
 import './globals.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
