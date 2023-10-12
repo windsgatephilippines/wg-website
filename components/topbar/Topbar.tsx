@@ -7,8 +7,8 @@ import Link from 'next/link'
 
 
 const Topbar = () => {
-  return (
-    <div className="container-fluid wg-blue px-0">
+  return <>
+    {/* <div className="container-fluid wg-blue px-0">
         <div className="row g-0 d-none d-lg-flex">
             <div className="col-lg-6 ps-5 text-start">
                 <div className="h-100 d-inline-flex align-items-center text-white">
@@ -27,8 +27,8 @@ const Topbar = () => {
                 </div>
             </div>
         </div>
-    </div>
-  )
+    </div> */}
+    </>
 }
 
 export default Topbar

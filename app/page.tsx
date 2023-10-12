@@ -84,16 +84,16 @@ export default function Home() {
   ]
   const projects = [
     {
-      title: 'Rob Miller',
-      image_path: '/../public/img/project-1.jpg',
+      title: 'Team Buiding',
+      image_path: '/../public/img/event-1.jpg',
     },
     {
-      title: 'Adam Crew',
-      image_path: '/../public/img/project-2.jpg',
+      title: 'Team Montly Dinner',
+      image_path: '/../public/img/event-2.jpg',
     },
     {
-      title: 'Peter Farel',
-      image_path: '/../public/img/project-3.jpg',
+      title: 'Team Huddle',
+      image_path: '/../public/img/event-3.jpg',
     },
     {
       title: 'Adam Crew',

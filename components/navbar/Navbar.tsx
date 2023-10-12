@@ -25,16 +25,16 @@ const Navbar = () => {
                 <div className="nav-item dropdown">
                     <a href="#" className="nav-link align-baseline" data-bs-toggle="dropdown">Pages<FontAwesomeIcon icon={faAngleDown}/></a>
                     <div className="dropdown-menu bg-light m-0">
-                      <Link href={"/"}className="dropdown-item">Projects</Link>
+                      {/* <Link href={"/"}className="dropdown-item">Projects</Link> */}
                       <Link href={"/feature"} className="dropdown-item">Features</Link>
                       <Link href={"/team"} className="dropdown-item">Our Team</Link>
-                      <Link href={"/testimonial"} className="dropdown-item">Testimonial</Link>
+                      {/* <Link href={"/testimonial"} className="dropdown-item">Testimonial</Link> */}
                       {/* <Link href="404.html" className="dropdown-item">404 Page</Link> */}
                     </div>
                 </div>
                 <Link href={"/contact"} className="nav-item nav-link">Contact</Link>
             </div>
-            <Link href="#" className="btn btn-primary px-3 d-none d-lg-block">JOIN NOW</Link>
+            {/* <Link href="#" className="btn btn-primary px-3 d-none d-lg-block">JOIN NOW</Link> */}
         </div>
     </nav>
   )

@@ -26,7 +26,7 @@ const ServiceItem =  ({services}) => {
                             <p className="text-white mb-0">{item.description}</p>
                         </div>
                     </div>
-                    <a className="btn btn-light" href="">Read More</a>
+                    {/* <a className="btn btn-light" href="">Read More</a> */}
                 </div>
             </div>
             </ReactWOW>

@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { faShare } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF,faTwitter,faInstagram } from "@fortawesome/free-brands-svg-icons";

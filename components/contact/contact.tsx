@@ -13,9 +13,9 @@ const Contact = () => {
                                 <FontAwesomeIcon className="fa-2x text-primary" icon={faPhone}></FontAwesomeIcon>
                             </div>
                             <h4 className="mb-3">Phone Number</h4>
-                            <p className="mb-2">+012 345 67890</p>
-                            <p className="mb-4">+012 345 67890</p>
-                            <a className="btn btn-primary px-4" href="tel:+0123456789">Call Now <i
+                            <p className="mb-2">+(032) 236-6400</p>
+                            <p className="mb-8"></p>
+                            <a className="btn btn-primary px-4" href="tel:+(032) 236-6400">Call Now <i
                                     className="fa fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
@@ -25,8 +25,8 @@ const Contact = () => {
                             <FontAwesomeIcon className="fa-2x text-primary" icon={faEnvelopeOpen}></FontAwesomeIcon>
                             </div>
                             <h4 className="mb-3">Email Address</h4>
-                            <p className="mb-2">info@example.com</p>
-                            <p className="mb-4">support@example.com</p>
+                            <p className="mb-2">mariejoy.vasquez@fidx.co.jp</p>
+                            {/* <p className="mb-4">support@example.com</p> */}
                             <a className="btn btn-primary px-4" href="mailto:info@example.com">Email Now <i
                                     className="fa fa-arrow-right ms-2"></i></a>
                         </div>
@@ -37,8 +37,8 @@ const Contact = () => {
                             <FontAwesomeIcon className="fa-2x text-primary" icon={faMapMarkerAlt}></FontAwesomeIcon>
                             </div>
                             <h4 className="mb-3">Office Address</h4>
-                            <p className="mb-2">+012 345 67890</p>
-                            <p className="mb-4">+012 345 67890</p>
+                            <p className="mb-2">33E Cebu Exchange Building, Salinas Drive, Lahug, Cebu City</p>
+                            {/* <p className="mb-4">+012 345 67890</p> */}
                             <a className="btn btn-primary px-4" href="https://goo.gl/maps/FsznshxgnULBGgkN9"
                                 target="blank">Direction <i className="fa fa-arrow-right ms-2"></i></a>
                         </div>
@@ -60,9 +60,9 @@ const Contact = () => {
                     <div className="col-lg-6 wow animate__animated animate_fadeInUp" data-wow-delay="0.1s">
                         <p className="fw-medium text-uppercase text-primary mb-2">Contact Us</p>
                         <h1 className="display-5 mb-4">If You Have Any Queries, Please Feel Free To Contact Us</h1>
-                        <p className="mb-4">The contact form is currently inactive. Get a functional and working contact form
+                        {/* <p className="mb-4">The contact form is currently inactive. Get a functional and working contact form
                             with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're
-                            done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                            done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> */}
                         <div className="row g-4">
                             <div className="col-6">
                                 <div className="d-flex">
@@ -71,7 +71,7 @@ const Contact = () => {
                                     </div>
                                     <div className="ms-3">
                                         <h6>Call Us</h6>
-                                        <span>+012 345 67890</span>
+                                        <span>+(032) 236-6400</span>
                                     </div>
                                 </div>
                             </div>
@@ -82,13 +82,13 @@ const Contact = () => {
                                     </div>
                                     <div className="ms-3">
                                         <h6>Mail Us</h6>
-                                        <span>info@example.com</span>
+                                        <span>mariejoy.vasquez@fidx.co.jp</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 wow animate__animated animate_fadeInUp" data-wow-delay="0.5s">
+                    {/* <div className="col-lg-6 wow animate__animated animate_fadeInUp" data-wow-delay="0.5s">
                         <form>
                             <div className="row g-3">
                                 <div className="col-md-6">
@@ -122,7 +122,7 @@ const Contact = () => {
                                 </div>
                             </div>
                         </form>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
