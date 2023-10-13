@@ -1,27 +1,36 @@
-import React from 'react';
-import { AppProps } from 'next/app';
+import React from "react";
+import { AppProps } from "next/app";
 
-const PageHeader = ({pageName}) => {
-    const pageNameLength = pageName.length;
+const PageHeader = ({ pageName }: any) => {
+  const pageNameLength = pageName.length;
   return (
     // Page Header Start
-    <div className="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div className="container py-5">
-            <h1 className="display-3 text-white animated slideInRight">{pageName.slice(-1)}</h1>
-            <nav aria-label="breadcrumb">
-                <ol className="breadcrumb animated slideInRight mb-0">
-                    {pageName.map((name: string,index: number) => (
-                       
-                        <li tabIndex={index} className={`breadcrumb-item ${pageNameLength == (index + 1) ? 'active' : ''}`}><a href="#">{name}</a></li>
-                        
-                    ))}
-                    
-                </ol>
-            </nav>
-        </div>
+    <div
+      className="container-fluid page-header py-5 mb-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div className="container py-5">
+        <h1 className="display-3 text-white animated slideInRight">
+          {pageName.slice(-1)}
+        </h1>
+        <nav aria-label="breadcrumb">
+          <ol className="breadcrumb animated slideInRight mb-0">
+            {pageName.map((name: string, index: number) => (
+              <li
+                tabIndex={index}
+                className={`breadcrumb-item ${
+                  pageNameLength == index + 1 ? "active" : ""
+                }`}
+              >
+                <a href="#">{name}</a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      </div>
     </div>
-    // Page Header End 
-  )
-}
+    // Page Header End
+  );
+};
 
-export default PageHeader
+export default PageHeader;
