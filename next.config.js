@@ -3,7 +3,7 @@ const path = require('path')
 const webpack = require('webpack');
 
 const nextConfig = {
-output: 'export',
+// output: 'export',
 //   webpack: (config, {isServer, webpack}) => {
 //     // Note: we provide webpack above so you should not `require` it
 //     // Perform customizations to webpack config

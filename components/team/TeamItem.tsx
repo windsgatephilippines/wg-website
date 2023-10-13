@@ -18,7 +18,7 @@ const TeamItem = ({ teams }: any) => {
         {teams.map((item: Iitem, key: number) => (
           <div
             key={key}
-            className="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp"
+            className="col-lg-3 col-md-6 wow animate__animated animate__fadeInUp"
             data-wow-delay="0.3s"
           >
             <div className="team-item">

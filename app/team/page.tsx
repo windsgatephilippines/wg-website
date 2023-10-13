@@ -34,21 +34,84 @@ const Team = () => {
         {
           name: 'Primo Dionson',
           position: 'Software Engineer',
-          image_path: '/../public/img/jude.jpg',
+          image_path: '/../public/img/primo.jpg',
           facebook: '#',
           twitter: '#',
           instagram: '#',
     
         },
         {
-            name: 'Jeff Acain',
-            position: 'Software Engineer',
-            image_path: '/../public/img/jude-1.jpg',
-            facebook: '#',
-            twitter: '#',
-            instagram: '#',
-      
-          },
+          name: 'Jeff Acain',
+          position: 'Software Engineer',
+          image_path: '/../public/img/jeff.jpg',
+          facebook: '#',
+          twitter: '#',
+          instagram: '#',
+    
+        },
+        {
+          name: 'Eliseo Mandal JR.',
+          position: 'Software Engineer',
+          image_path: '/../public/img/eliseo.jpg',
+          facebook: '#',
+          twitter: '#',
+          instagram: '#',
+    
+        },
+        {
+          name: 'Romnel Pateres',
+          position: 'Software Engineer',
+          image_path: '/../public/img/romnel.jpg',
+          facebook: '#',
+          twitter: '#',
+          instagram: '#',
+    
+        },
+        {
+          name: 'Roel Monteros',
+          position: 'Software Engineer',
+          image_path: '/../public/img/roel.jpg',
+          facebook: '#',
+          twitter: '#',
+          instagram: '#',
+    
+        },
+        {
+          name: 'Reynante Escano',
+          position: 'Software Engineer',
+          image_path: '/../public/img/rey.jpg',
+          facebook: '#',
+          twitter: '#',
+          instagram: '#',
+    
+        },
+        {
+          name: 'Rodvic Gegonia',
+          position: 'Software Engineer',
+          image_path: '/../public/img/rod.jpg',
+          facebook: '#',
+          twitter: '#',
+          instagram: '#',
+    
+        },
+        {
+          name: 'Jason Genobiagon',
+          position: 'Software Engineer',
+          image_path: '/../public/img/jason.jpg',
+          facebook: '#',
+          twitter: '#',
+          instagram: '#',
+    
+        },
+        {
+          name: 'Rayan Iglesia',
+          position: 'Software Engineer',
+          image_path: '/../public/img/rayan.jpg',
+          facebook: '#',
+          twitter: '#',
+          instagram: '#',
+    
+        },
     ]
 
     return (
