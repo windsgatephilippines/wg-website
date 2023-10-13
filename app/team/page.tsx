@@ -5,35 +5,35 @@ import TeamItem from '@/components/team/TeamItem';
 const Team = () => {
     const teams = [
         {
-          name: 'Rob Miller',
-          position: 'CEO & Founder',
-          image_path: '/../public/img/team-1.jpg',
+          name: 'John Celestial',
+          position: 'Team Lead',
+          image_path: '/../public/img/john.jpg',
           facebook: '#',
           twitter: '#',
           instagram: '#',
     
         },
         {
-          name: 'Adam Crew',
-          position: 'Project Manager',
-          image_path: '/../public/img/team-2.jpg',
+          name: 'Holroyd Apiag',
+          position: 'Team Lead',
+          image_path: '/../public/img/roy.jpg',
           facebook: '#',
           twitter: '#',
           instagram: '#',
     
         },
         {
-          name: 'Peter Farel',
+          name: 'Primo Dionson',
           position: 'Software Engineer',
-          image_path: '/../public/img/team-3.jpg',
+          image_path: '/../public/img/jude.jpg',
           facebook: '#',
           twitter: '#',
           instagram: '#',
     
         },
         {
-            name: 'Rob Miller',
-            position: 'CEO & Founder',
+            name: 'Jeff Acain',
+            position: 'Software Engineer',
             image_path: '/../public/img/team-1.jpg',
             facebook: '#',
             twitter: '#',

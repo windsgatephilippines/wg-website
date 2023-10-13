@@ -33,32 +33,32 @@ export default function Home() {
 
   const teams = [
     {
-      name: 'Rob Miller',
-      position: 'CEO & Founder',
-      image_path: '/../public/img/team-1.jpg',
+      name: 'John Celestial',
+      position: 'Team Lead',
+      image_path: '/../public/img/john.jpeg',
       facebook: '#',
       twitter: '#',
       instagram: '#',
 
     },
     {
-      name: 'Adam Crew',
-      position: 'Project Manager',
-      image_path: '/../public/img/team-2.jpg',
+      name: 'Holroyd Apiag',
+      position: 'Team Lead',
+      image_path: '/../public/img/roy.jpeg',
       facebook: '#',
       twitter: '#',
       instagram: '#',
 
     },
     {
-      name: 'Peter Farel',
-      position: 'Software Engineer',
-      image_path: '/../public/img/team-3.jpg',
+      name: 'Jude Nicolasora',
+      position: 'Team',
+      image_path: '/../public/img/judo.jpeg',
       facebook: '#',
       twitter: '#',
       instagram: '#',
 
-    },
+    }
   ]
   const testimonials = [
     {
