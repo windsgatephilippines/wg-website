@@ -7,7 +7,7 @@ const Team = () => {
         {
           name: 'John Celestial',
           position: 'Team Lead',
-          image_path: '/../public/img/john.jpg',
+          image_path: '/../public/img/john1.jpeg',
           facebook: '#',
           twitter: '#',
           instagram: '#',
@@ -16,7 +16,16 @@ const Team = () => {
         {
           name: 'Holroyd Apiag',
           position: 'Team Lead',
-          image_path: '/../public/img/roy.jpg',
+          image_path: '/../public/img/roy1.jpeg',
+          facebook: '#',
+          twitter: '#',
+          instagram: '#',
+    
+        },
+        {
+          name: 'Jude Nicolasora',
+          position: 'Team Lead',
+          image_path: '/../public/img/jude.jpeg',
           facebook: '#',
           twitter: '#',
           instagram: '#',
@@ -34,25 +43,7 @@ const Team = () => {
         {
             name: 'Jeff Acain',
             position: 'Software Engineer',
-            image_path: '/../public/img/team-1.jpg',
-            facebook: '#',
-            twitter: '#',
-            instagram: '#',
-      
-          },
-          {
-            name: 'Adam Crew',
-            position: 'Project Manager',
-            image_path: '/../public/img/team-2.jpg',
-            facebook: '#',
-            twitter: '#',
-            instagram: '#',
-      
-          },
-          {
-            name: 'Peter Farel',
-            position: 'Software Engineer',
-            image_path: '/../public/img/team-3.jpg',
+            image_path: '/../public/img/jude-1.jpg',
             facebook: '#',
             twitter: '#',
             instagram: '#',

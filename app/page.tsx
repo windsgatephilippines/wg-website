@@ -35,7 +35,7 @@ export default function Home() {
     {
       name: 'John Celestial',
       position: 'Team Lead',
-      image_path: '/../public/img/john.jpeg',
+      image_path: '/../public/img/john1.jpeg',
       facebook: '#',
       twitter: '#',
       instagram: '#',
@@ -44,7 +44,7 @@ export default function Home() {
     {
       name: 'Holroyd Apiag',
       position: 'Team Lead',
-      image_path: '/../public/img/roy.jpeg',
+      image_path: '/../public/img/roy1.jpeg',
       facebook: '#',
       twitter: '#',
       instagram: '#',
@@ -53,7 +53,7 @@ export default function Home() {
     {
       name: 'Jude Nicolasora',
       position: 'Team',
-      image_path: '/../public/img/judo.jpeg',
+      image_path: '/../public/img/jude.jpeg',
       facebook: '#',
       twitter: '#',
       instagram: '#',
