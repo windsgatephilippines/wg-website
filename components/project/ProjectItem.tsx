@@ -33,7 +33,7 @@ const ProjectItem = ({projects}) => {
       });
     return (
         <>
-            <ReactWOW>
+            <ReactWOW animation='fadeIn'>
                 <div className="project-carousel wow fadeIn" data-wow-delay="0.1s">
 
                     {carouselFragment}

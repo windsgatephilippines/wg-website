@@ -9,7 +9,7 @@ const FeatureTeam = () => {
         <div className="container-xxl py-5">
             <div className="container">
                 <div className="row g-5 align-items-center">
-                    <ReactWOW>
+                    <ReactWOW animation='fadeInUp'>
                     <div className="col-lg-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
                         <h1 className="display-5 mb-4">Join Our Team!</h1>
                         <p className="mb-4">Job Description</p>
@@ -87,7 +87,7 @@ const FeatureTeam = () => {
                         </div>
                     </div>
                     </ReactWOW>
-                    <ReactWOW>
+                    <ReactWOW animation='fadeInUp'>
                     <div className="col-lg-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
                         <div className="position-relative me-lg-4">
                             <img className="img-fluid w-100" src="img/feature.jpg" alt="" />

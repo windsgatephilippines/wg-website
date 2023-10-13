@@ -9,7 +9,7 @@ const ServiceItem =  ({services}) => {
     return (
         <>
         {services.map((item: Array<string>,index: number) => (
-            <ReactWOW>
+            <ReactWOW animation='fadeInUp'>
             <div tabIndex={index} className="col-md-6 col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
                 <div className="service-item">
                     <Image className="img-fluid" src={item.image_path} alt="service_image" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} />

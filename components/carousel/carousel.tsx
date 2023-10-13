@@ -1,9 +1,10 @@
-'use client'
-import React from 'react'
+'use client';
+import React from 'react';
 import ReactWOW from 'react-wow';
 import {useSpringCarousel} from 'react-spring-carousel';
 import { CarouselItem } from 'react-bootstrap';
 import Image from 'next/image';
+// const useSpringCarousel = require('react-spring-carousel');
 
 const Carousel = () => {
     const items = [
@@ -40,12 +41,12 @@ const Carousel = () => {
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-lg-10 text-start">
-                                    <ReactWOW>
+                                    {/* <ReactWOW animation='slideInRight'> */}
                                     <p className="fs-5 fw-medium text-primary text-uppercase animate__animated animated animate__slideInRight">{item.sub_title}</p>
                                     
                                     <h1 className="display-1 text-white mb-5 animate__animated animate__slideInRight">{item.title}</h1>
                                     <a href="#" className="btn btn-primary py-3 px-5 animate__animated animate__slideInRight">{item.button_name}</a>
-                                    </ReactWOW>
+                                    {/* </ReactWOW> */}
                                 </div>
                             </div>
                         </div>

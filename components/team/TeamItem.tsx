@@ -9,7 +9,7 @@ import ReactWOW from 'react-wow';
 const TeamItem = ({teams}) => {
     return (
         <div className="row g-4">
-            <ReactWOW>
+            <ReactWOW animation="fadeInUp">
             {teams.map((item: Array<object>,key: number) => (
                 <div key={key} className="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                     <div className="team-item">

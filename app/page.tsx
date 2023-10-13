@@ -1,4 +1,4 @@
-import Carousel from '@/components/carousel/Carousel';
+
 import About from '@/components/about/About';
 import Feature from '@/components/feature/Feature';
 import FeatureRightHome from '@/components/featureRightHome/FeatureRightHome';
@@ -8,6 +8,7 @@ import Team from '@/components/team/Team';
 import 'animate.css';
 import Testimonial from '@/components/testimonial/Testimonial';
 import Project from '@/components/project/Project';
+import Carousel from '@/components/carousel/carousel';
 
 
 export default function Home() {
@@ -96,16 +97,16 @@ export default function Home() {
       image_path: '/../public/img/event-3.jpg',
     },
     {
-      title: 'Adam Crew',
-      image_path: '/../public/img/project-4.jpg',
+      title: 'Rodo San',
+      image_path: '/../public/img/event-4.jpg',
     },
     {
-      title: 'Peter Farel',
-      image_path: '/../public/img/project-5.jpg',
+      title: 'Rayan San',
+      image_path: '/../public/img/event-5.jpg',
     },
     {
-      title: 'Peter Farel',
-      image_path: '/../public/img/project-6.jpg',
+      title: 'Dinner & Night Out',
+      image_path: '/../public/img/event-6.jpg',
     },
   ]
   return (
@@ -114,7 +115,7 @@ export default function Home() {
       <About></About>
       <div className='container-fluid facts my-5 p-5'>
         <div className="container">
-          <Feature featureRight={<FeatureRightHome />} />
+          <Feature />
         </div>
       </div>
       <FeatureTeam />

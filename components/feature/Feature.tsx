@@ -1,12 +1,12 @@
 'use client'
 import React from "react";
 import ReactWow from 'react-wow';
-
-const Feature = ({featureRight}) => {
+import FeatureRightHome from '@/components/featureRightHome/FeatureRightHome';
+const Feature = () => {
     return (
         
         <div className="row g-5 align-items-center">
-            <ReactWow>
+            <ReactWow animation="fadeInUp">
             <div className="col-lg-6 animate__animated animate__fadeInUp" data-wow-delay="0.1s">
                 <div className="position-relative me-lg-4">
                     <img className="img-fluid w-100" src="img/feature.jpg" alt="" />
@@ -20,9 +20,9 @@ const Feature = ({featureRight}) => {
                 </div>
             </div>
             </ReactWow>
-            <ReactWow>
+            <ReactWow animation="fadeInUp">
             <div className="col-lg-6 animate__animated animate__fadeInUp" data-wow-delay="0.5s">
-                {featureRight}
+                <FeatureRightHome />
             </div>
             </ReactWow>
         </div>
